@@ -11,7 +11,13 @@
     "typescript": "^3.2.2"
   },
   "scripts": {
+    "dev": "gulp && node dist/main.js",
     "start": "node dist/main.js",
     "build": "gulp"
+  },
+  "dependencies": {
+    "@types/dotenv": "^6.1.0",
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.2.0"
   }
 }
