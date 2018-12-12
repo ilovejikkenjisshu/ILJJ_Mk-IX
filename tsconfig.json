@@ -1,5 +1,10 @@
 {
-  "files": ["src/main.ts"],
+  "files": [
+    "src/main.ts",
+    "src/client.ts",
+    "src/modules/types.ts",
+    "src/modules/ping.ts"
+  ],
   "compilerOptions": {
     "noImplicitAny": true,
     "target": "es5",
