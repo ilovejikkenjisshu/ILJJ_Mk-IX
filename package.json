@@ -1,0 +1,17 @@
+{
+  "name": "ILJJ_Mk-IX",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ilovejikkenjisshu/ILJJ_Mk-IX.git",
+  "author": "proelbtn <proelbtn@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "gulp"
+  }
+}
