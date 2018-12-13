@@ -1,6 +1,7 @@
 {
   "files": [
     "src/main.ts",
+    "src/settings.ts",
     "src/client.ts",
     "src/modules/types.ts",
     "src/modules/parrot.ts",
