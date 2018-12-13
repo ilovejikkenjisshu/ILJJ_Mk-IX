@@ -3,7 +3,8 @@
     "src/main.ts",
     "src/client.ts",
     "src/modules/types.ts",
-    "src/modules/ping.ts"
+    "src/modules/ping.ts",
+    "src/modules/help.ts"
   ],
   "compilerOptions": {
     "noImplicitAny": true,

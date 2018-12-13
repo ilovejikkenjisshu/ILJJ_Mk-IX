@@ -21,12 +21,16 @@ export class ILJJ_Mk_IX {
       if (args.length <= 1) return;
       if (!this.subcmd_map.has(args[1])) return;
 
-      this.subcmd_map.get(args[1]).execute(this.client, msg, args);
+      this.subcmd_map.get(args[1]).execute(msg, args);
     }
   }
 
   append_cmd(subcmd: string, mod: ISubCommand) {
     this.subcmd_map.set(subcmd, mod);
+  }
+
+  get_cmds(): Map<string, ISubCommand> {
+    return this.subcmd_map;
   }
 
   login(token: string) {
