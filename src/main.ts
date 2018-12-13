@@ -14,5 +14,19 @@ client.append_cmd(
   "ping",
   new parrot.Module(client, ["pong"], "execute ping-pong test")
 );
+client.append_cmd(
+  "fmufmu",
+  new parrot.Module(
+    client,
+    [
+      "ふみゅ？",
+      "ふみゅ〜",
+      "ふみゅみゅ！",
+      "ふみゅふみゅ〜",
+      "ふみゅみゅ、、、"
+    ],
+    "it will destroy your heart..."
+  )
+);
 
 client.login(process.env.ILJJMKIX_TOKEN);
