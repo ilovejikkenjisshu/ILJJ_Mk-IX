@@ -26,7 +26,7 @@ export class Module implements ISubCommand {
   }
 
   execute(msg: Discord.Message, argv: Array<string>): void {
-    let pos = getRandomInteger(0, this.messages.length - 1);
+    let pos = getRandomInteger(0, this.messages.length);
     msg.channel.send(this.messages[pos]);
   }
 }
