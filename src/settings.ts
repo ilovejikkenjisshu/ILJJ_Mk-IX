@@ -1,4 +1,5 @@
 import * as help from "./modules/help";
+import * as dice from "./modules/dice";
 
 export const Settings: Array<any> = [
   {
@@ -28,6 +29,13 @@ export const Settings: Array<any> = [
         "ふみゅふみゅ〜",
         "ふみゅみゅ、、、"
       ]
+    }
+  },
+  {
+    name: "dice",
+    type: "direct",
+    option: {
+      module: dice.Module
     }
   }
 ];

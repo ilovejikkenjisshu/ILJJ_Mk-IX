@@ -5,7 +5,8 @@
     "src/client.ts",
     "src/modules/types.ts",
     "src/modules/parrot.ts",
-    "src/modules/help.ts"
+    "src/modules/help.ts",
+    "src/modules/dice.ts"
   ],
   "compilerOptions": {
     "noImplicitAny": true,

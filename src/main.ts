@@ -15,6 +15,8 @@ for (let cmd of Settings) {
   let key = cmd["name"];
   let opt = cmd["option"];
 
+  console.log("loaded: " + key);
+
   switch (cmd["type"]) {
     case "direct":
       client.append_cmd(key, new opt["module"](client));
