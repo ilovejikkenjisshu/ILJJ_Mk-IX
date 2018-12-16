@@ -1,5 +1,6 @@
 import * as help from "./modules/help";
 import * as dice from "./modules/dice";
+import * as group from "./modules/group";
 
 export const Settings: Array<any> = [
   {
@@ -36,6 +37,13 @@ export const Settings: Array<any> = [
     type: "direct",
     option: {
       module: dice.Module
+    }
+  },
+  {
+    name: "group",
+    type: "direct",
+    option: {
+      module: group.Module
     }
   }
 ];
