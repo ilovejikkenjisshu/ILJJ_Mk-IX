@@ -2,6 +2,7 @@
 
 TAG=proelbtn/iljj-mk-ix
 
-docker container run -it --rm ${TAG}
+source .env
+docker container run -it --rm -e "ILJJMKIX_TOKEN=${ILJJMKIX_TOKEN}" ${TAG}
 
 
