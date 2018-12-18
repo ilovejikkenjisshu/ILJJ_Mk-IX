@@ -46,8 +46,13 @@ export class Module implements ISubCommand {
       let emojis = this.client.client.emojis;
       let emoji = emojis.find(emoji => emoji.name === name);
       reply += emoji.toString();
+
+      if ((i + 1) % 50 == 0) {
+        msg.channel.send(reply);
+        reply = "";
+      }
     }
 
-    msg.channel.send(reply);
+    if (reply != "") msg.channel.send(reply);
   }
 }
