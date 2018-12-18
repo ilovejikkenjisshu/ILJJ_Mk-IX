@@ -7,7 +7,8 @@
     "src/modules/parrot.ts",
     "src/modules/help.ts",
     "src/modules/dice.ts",
-    "src/modules/group.ts"
+    "src/modules/group.ts",
+    "src/modules/t-gacha.ts"
   ],
   "compilerOptions": {
     "noImplicitAny": true,

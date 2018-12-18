@@ -1,6 +1,7 @@
 import * as help from "./modules/help";
 import * as dice from "./modules/dice";
 import * as group from "./modules/group";
+import * as tgacha from "./modules/t-gacha";
 
 export const Settings: Array<any> = [
   {
@@ -44,6 +45,13 @@ export const Settings: Array<any> = [
     type: "direct",
     option: {
       module: group.Module
+    }
+  },
+  {
+    name: "t-gacha",
+    type: "direct",
+    option: {
+      module: tgacha.Module
     }
   }
 ];
