@@ -33,11 +33,13 @@ export class Module implements ISubCommand {
   execute(msg: Discord.Message, argv: Array<string>): void {
     if (argv.length > 3) {
       msg.channel.send("Error");
+      return;
     }
 
     let num = argv.length == 3 ? parseInt(argv[2]) : 1;
-    if (num <= 0) {
+    if (num <= 0 || num > 1000) {
       msg.channel.send("Error");
+      return;
     }
 
     let reply = "";
